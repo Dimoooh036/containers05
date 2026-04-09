@@ -14,10 +14,10 @@
 
 ### Извлечение конфигурационных файлов apache2, php, mariadb из контейнера
 
-В папке containers05 создал папку files, а также
-папку files/apache2 - для файлов конфигурации apache2;
-папку files/php - для файлов конфигурации php;
-папку files/mariadb - для файлов конфигурации mariadb.
+В папке `containers05` создал папку `files`, а также
+папку `files/apache2` - для файлов конфигурации apache2;
+папку `files/php` - для файлов конфигурации php;
+папку `files/mariadb` - для файлов конфигурации mariadb.
 И Создал в папке containers05 файл Dockerfile с необходимым содержимым
 
 Построил образ контейнера с именем "apache2-php-mariadb ."
