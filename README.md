@@ -66,6 +66,7 @@ max_execution_time = 120
 
 Открыл файл Dockerfile и добавил в него следующие строки:
 
+```Dockerfile
 FROM debian:latest
 VOLUME /var/lib/mysql
 VOLUME /var/log
@@ -89,6 +90,7 @@ RUN mkdir /var/run/mysqld && chown mysql:mysql /var/run/mysqld
 EXPOSE 80
 
 CMD ["/usr/bin/supervisord", "-n", "-c", "/etc/supervisor/supervisord.conf"]
+```
 
 Собрал образ контейнера с именем "apache2-php-mariadb" и запустил контейнер "apache2-php-mariadb" из образа "apache2-php-mariadb".
 Проверил наличие сайта "WordPress" в папке /var/www/html/. Проверил изменения конфигурационного файла "apache2".
